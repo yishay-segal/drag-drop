@@ -1,0 +1,22 @@
+@import "../abstracts/mixins.scss";
+
+.Xselect {
+    font-family: inherit;
+    appearance: none;
+    width: 100%;
+    padding: 0.6em;
+    border-radius: 0.4em;
+    font-size: 22px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-size: 15px 15px;
+    background-position: right 0.75rem center;
+    option {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    @include focusEffect();
+}

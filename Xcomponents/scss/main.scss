@@ -1,0 +1,17 @@
+@import "components/select.scss";
+@import "components/buttons.scss";
+@import "components/inputs.scss";
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 

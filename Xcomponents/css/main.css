@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.Xselect {
+  font-family: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 0.4em;
+  font-size: 22px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-size: 15px 15px;
+  background-position: right 0.75rem center;
+  transition: box-shadow 200ms linear;
+}
+.Xselect option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.Xselect:focus {
+  transition: box-shadow 200ms linear;
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(13, 110, 253, 0.5);
+}
+
+.Xbtn-primary {
+  width: -webkit-min-content;
+  width: min-content;
+  padding: 0.6em 2em;
+  font-size: 16px;
+  border: 2px solid #226fbe;
+  border-radius: 0.4em;
+  color: white;
+  background: #226fbe;
+  font-family: inherit;
+  transition: all 0.3s linear;
+  transition: box-shadow 200ms linear;
+}
+.Xbtn-primary:hover {
+  transition: background-color 0.3s linear;
+  background-color: #1a5693;
+}
+.Xbtn-primary:focus {
+  transition: box-shadow 200ms linear;
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(13, 110, 253, 0.5);
+}
+
+.Xbtn-dark {
+  width: -webkit-min-content;
+  width: min-content;
+  padding: 0.6em 2em;
+  font-size: 16px;
+  border: 2px solid #343a40;
+  border-radius: 0.4em;
+  color: white;
+  background: #343a40;
+  font-family: inherit;
+  transition: all 0.3s linear;
+  transition: box-shadow 200ms linear;
+}
+.Xbtn-dark:hover {
+  transition: background-color 0.3s linear;
+  background-color: #1d2124;
+}
+.Xbtn-dark:focus {
+  transition: box-shadow 200ms linear;
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(52, 58, 64, 0.5);
+}
+
+.Xinput-text {
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 0.4em;
+  font-size: 22px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  transition: box-shadow 200ms linear;
+}
+.Xinput-text:focus {
+  transition: box-shadow 200ms linear;
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(13, 110, 253, 0.5);
+}
+
+.Xcheckbox {
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: box-shadow 200ms linear;
+}
+.Xcheckbox:focus {
+  transition: box-shadow 200ms linear;
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(13, 110, 253, 0.5);
+}
+
+.Xradio {
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: box-shadow 200ms linear;
+}
+.Xradio:focus {
+  transition: box-shadow 200ms linear;
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(13, 110, 253, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

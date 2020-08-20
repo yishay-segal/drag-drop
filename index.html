@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Xcomponents/css/main.css">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="container-content">
+            <div class="search-bar Xinput-text" tabindex="1">
+                <i class="fas fa-search icon icon-search"></i>
+                <input spellcheck="false" type="text" class="search-input ">
+            </div>
+        </div>
+
+        <div class="box-cont">
+            <!-- <div class="content-box">
+                <div class="details">
+                    <p class="head">${header}</p>
+                    <div class="div-note">
+                        <textarea spellcheck="false" class="Xinput-text" id="input-note" placeholder="Add a note"></textarea>
+                        <div class="div-btn ">
+                            <button disabled class="add-btn disabled">Add</button>
+                            <button class="cancel-btn">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="sub-nav">
+                        <span class="plus-new">+</span>
+                        <div class="dots-div">
+                            <span class="dots" id="column-dots">...</span>
+                        </div>
+                        <div class="dropdown-menu dm-column">
+                            <div class="dropdown-menu--text">
+                                <ul>
+                                    <li><button>Edit column</button></li>
+                                    <li><button>Delete column</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-div">
+                    <i class="far fa-sticky-note"></i>
+                    <p>${text}</p>
+                    <div class="sub-nav">
+                        <div class="dots-div">
+                            <span class="dots" id="dots-card">...</span>
+                        </div>
+                        <div class="dropdown-menu dm-note">
+                            <div class="dropdown-menu--text">
+                                <ul>
+                                    <li><button>Edit note</button></li>
+                                    <li><button>Delete note</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="overlay">
+        <div class="overlay-content" id="add-box">
+            <div class="overlay-box">
+                <div class="overlay-header">
+                    <p class="overlay-title">
+                        Add a column
+                    </p>
+                </div>
+                <div class="overlay-input">
+                    <p class="input-header">Column name</p>
+                    <input spellcheck="false" type="text" class="Xinput-text" id="input-name" placeholder="Add a column name">
+                </div>
+                <div class="button-div">
+                    <button disabled class="btn-create disabled">Create column</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="overlay-content" id="edit-column">
+            <div class="overlay-box">
+                <div class="overlay-header">
+                    <p class="overlay-title">
+                        Edit Done
+                    </p>
+                </div>
+                <div class="overlay-input">
+                    <p class="input-header ">Column name</p>
+                    <input spellcheck="false" type="text" class="Xinput-text edCo-input" >
+                </div>
+                <div class="button-div">
+                    <button disabled class="btn-create disabled edCo-btn">Update column</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-content" id="edit-note">
+            <div class="overlay-box">
+                <div class="overlay-header">
+                    <p class="overlay-title">
+                        Edit Done
+                    </p>
+                </div>
+                <div class="overlay-input">
+                    <p class="input-header">Note name</p>
+                    <textarea spellcheck="false" type="text" class="Xinput-text textarea edNo-input"></textarea>
+                </div>
+                <div class="button-div">
+                    <button disabled class="btn-create disabled edNo-btn">save note</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-content" id="delete-column">
+            <div class="overlay-box">
+                <div class="overlay-header">
+                    <p class="overlay-title">
+                        Delete column name
+                    </p>
+                </div>
+                <div class="overlay-message">
+                    <p class="text-message">This action will remove any note associated with the column</p>
+                </div>
+                <div class="button-div">
+                    <button  class="btn btn-delete">Delete column</button>
+                    <button class="btn cancel-delete-column">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

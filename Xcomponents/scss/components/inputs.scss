@@ -1,0 +1,28 @@
+@import "abstracts/mixins.scss";
+
+@mixin singleBox {
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+    @include focusEffect();
+}
+
+.Xinput-text {
+    width: 100%;
+    padding: 0.6em;
+    border-radius: 0.4em;
+    font-size: 22px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    @include focusEffect();
+}
+
+.Xcheckbox {
+    @include singleBox();
+}
+
+.Xradio {
+    @include singleBox();
+}

@@ -1,0 +1,29 @@
+@import "abstracts/mixins.scss";
+
+@mixin btn($color) {
+    width: min-content;
+    padding: 0.6em 2em;
+    font-size: 16px;
+    border: 2px solid $color;
+    border-radius: 0.4em;
+    color: white;
+    background: $color;
+    font-family: inherit;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transition: background-color 0.3s linear;
+
+        background-color: darken($color, 10%);
+    }
+}
+
+.Xbtn-primary {
+    @include btn(#226fbe);
+    @include focusEffect();
+}
+
+.Xbtn-dark {
+    @include btn(rgba(52, 58, 64, 1));
+    @include focusEffect(rgba(52, 58, 64, 0.5));
+}
