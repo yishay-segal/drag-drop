@@ -35,7 +35,6 @@ export default class DataBase {
     }
 
     addObject(item) {
-        console.log(this.db);
         const transaction = this.db.transaction('columns', 'readwrite');
         const columns = transaction.objectStore('columns');
 
@@ -71,7 +70,7 @@ export default class DataBase {
     editColumn(item)  {
         const transaction = this.db.transaction('columns', 'readwrite');
         const columns = transaction.objectStore('columns');
-        console.log(item);
+
         const put = () => {
             return new Promise((res, rej) => {
                 columns.put(item);
@@ -85,7 +84,7 @@ export default class DataBase {
     }
         
     deleteNote(item, id) {
-        this.editColumn(id, item);
+        this.editColumn(item);
     }
 
     deleteColumn(id) {
@@ -102,15 +101,6 @@ export default class DataBase {
             req.onsuccess = () => {
                 open(this.items = req.result);
             }
-            
-            // console.log('working');
-            // const read = async() => {
-            //     const res = await getAll();
-            //     console.log(res.result);
-            // }
-            // read();
         })
-        
-        // console.log(columns.getAll());
     }
 }

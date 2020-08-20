@@ -119,8 +119,6 @@ addBoxView.btnDisable(document.querySelector('.edCo-input'), document.querySelec
 addBoxView.btnDisable(document.querySelector('.edNo-input'), document.querySelector('.edNo-btn'));
 const dropController = (id) => {
     dropView.setEvents(id);
-    // addBoxView.btnDisable(document.querySelector('.edCo-input'), document.querySelector('.edCo-btn'));
-    // addBoxView.btnDisable(document.querySelector('.edNo-input'), document.querySelector('.edNo-btn'));
 };
 
 // hadale edit column name
@@ -165,6 +163,7 @@ document.querySelector('#edit-note').addEventListener('click', (e) => {
 export const deleteNote = () => {
     const id = dropView.id;
     const item = state.column.deleteNote(id);
+    console.log(item);
     state.dataBase.deleteNote(item, id);
     deletV.deleteNote(id);
 }
