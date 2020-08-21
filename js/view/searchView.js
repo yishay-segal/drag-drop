@@ -15,4 +15,37 @@ export default class SearchView {
             document.querySelector('.search-bar').classList.remove('focus');
         })
     }
+
+    getSearchInput() {
+        return elements.searchInput.value;
+    }
+
+    showSearchItem(array) {
+            const elements = [...document.querySelectorAll('.content-box')];
+
+            elements.forEach(elem => {
+                elem.classList.remove('searching');
+            })
+
+            array.forEach(id => {
+                const anc = document.querySelector(`[data-id="${id}"]`).parentElement;
+                console.log(anc);
+                anc.classList.add('searching');
+                anc.classList.remove('display-none');
+            });
+            
+            elements.forEach(elem => {
+                if(!elem.className.includes('searching')) {
+                    elem.classList.add('display-none');
+                }
+            })
+    }
+
+    showAllElements() {
+        const elements = [...document.querySelectorAll('.content-box')];
+        elements.forEach(elem => {
+            elem.classList.remove('display-none');
+            elem.classList.remove('searching');
+        })
+    }
 }

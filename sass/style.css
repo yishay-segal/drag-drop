@@ -476,4 +476,8 @@ html, body {
 .dragging {
   opacity: .5;
 }
+
+.searching {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

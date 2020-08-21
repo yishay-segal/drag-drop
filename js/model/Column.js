@@ -69,4 +69,19 @@ export default class Column {
         note.setAttribute('data-id', item.note.id);
         return {parent, anc, preAnc};
     }
+
+    returnChildren(input) {
+        const items = [];
+        this.items.forEach(elem => {
+            if (elem.children.length) {
+                elem.children.forEach(elem => {
+                    if (elem.text.includes(input)) {
+                        items.push(elem.id);
+                        console.log(elem);
+                    }
+                });
+            }
+        })
+        return items;
+    }
 }

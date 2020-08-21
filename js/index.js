@@ -170,3 +170,16 @@ export const deleteNote = () => {
 
 // serch controller
 const searchV = new searchView();
+
+elements.searchInput.addEventListener('input', (e) => {
+    const input = searchV.getSearchInput();
+    if (!(input === '' || input.trim() === '')) {
+        const items = state.column.returnChildren(input);
+        console.log(input, items);
+        
+        searchV.showSearchItem(items);
+    } else {
+        searchV.showAllElements();
+    }
+    
+})
